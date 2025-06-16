@@ -110,6 +110,11 @@ Log unto git and create a repo
 Using VSCode create a readme.md file
 Using git init, commit and push my readme file to github.
 
+### My IP Address.
+http://34.242.192.25
+
+### A VIEW OF MY DYNAMIC LANDING PAGE
+![LANDING PAGE](exams.png)
 
 ## 👤 Author
 **EMMANUELLA BALA**  
