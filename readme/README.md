@@ -49,33 +49,42 @@ This project demonstrates cloud provisioning, web server configuration, and web 
 
 **SSH into your Ubuntu server**, then install the necessary packages:
 
-#### 🔧 Install Nginx
+## 🔧 Install Nginx
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install nginx -y
+```
 
-
-🌐 Test Nginx
+## 🌐 Test Nginx
 Visit: http://34.242.192.25
 You should see the default Nginx welcome page.
 
-🔁 Set Up Reverse Proxy with Node.js
-Install Node.js:
+### 🔁 Set Up Reverse Proxy with Node.js
+
+## Install Node.js:
+``` bash
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install -y nodejs
+```
 
 # Sample Node.js app
+```bash
 mkdir myapp  &&  cd myapp
 npm init -y
 npm install express
 nano index.js
+```
 
 # Start it
+```bash
 node index.js
+```
 
 # Configure Nginx as a reverse proxy
+```bash
 sudo nano /etc/nginx/sites-available/default
 sudo nginx -t && sudo systemctl restart nginx
+```
 
 
 ### 3. Create a Dynamic Landing Page
@@ -101,8 +110,10 @@ Move your files individually index.html and style.css
 ### 4. Network and security set up
 
 # Enable HTTPS with Let’s Encrypt 
+```bash
 sudo apt install certbot python3-certbot-nginx -y
 sudo certbot --nginx
+```
 
 ### 5. Document everything on a Github Repo
 Create a Github Repo and ReadMe File
@@ -114,7 +125,7 @@ Using git init, commit and push my readme file to github.
 http://34.242.192.25
 
 ### A VIEW OF MY DYNAMIC LANDING PAGE
-![LANDING PAGE](exams.png)
+![LANDING PAGE](./exams.png)
 
 ## 👤 Author
 **EMMANUELLA BALA**  
